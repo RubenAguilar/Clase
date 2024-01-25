@@ -67,6 +67,17 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   }
+   void _resta() {
+    setState(() {
+     
+      _counter--;
+    });
+   }
+    void _reset() {
+    setState(() {
+     _counter = 0;
+    });
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +130,8 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
